@@ -45,6 +45,33 @@ body {
   }
 }
 
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+  .navBar h1{
+    margin-left: 1.5%;
+  }
+  .navBar a{
+    margin-right: 1.5%;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  .navBar h1{
+    margin-left: 4.5%;
+  }
+  .navBar a{
+    margin-right: 4.5%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .navBar h1{
+    margin-left: 9.5%;
+  }
+  .navBar a{
+    margin-right: 9.5%;
+  }
+}
+
 @media only screen and (min-width: 750px) {
 .navBar h1{
   font-size: 100%;
@@ -59,7 +86,6 @@ body {
 }
 
 .navBar h1{
-  margin-left: 20px;
   margin-top: 6px;
   color: rgb(255, 255, 255);
   font-size: 250%;
