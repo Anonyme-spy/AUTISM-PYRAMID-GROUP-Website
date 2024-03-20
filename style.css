@@ -54,33 +54,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 1000px) {
-  .navBar h1{
-    margin-left: 1.5%;
-  }
-  .navBar a{
-    margin-right: 1.5%;
-  }
-}
-
-@media only screen and (min-width: 1001px) and (max-width: 1200px) {
-  .navBar h1{
-    margin-left: 4.5%;
-  }
-  .navBar a{
-    margin-right: 4.5%;
-  }
-}
-
-@media only screen and (min-width: 1201px) {
-  .navBar h1{
-    margin-left: 7%;
-  }
-  .navBar a{
-    margin-right: 9.5%;
-  }
-}
-
 @media only screen and (min-width: 750px) {
 
 .navBar ul {
@@ -92,11 +65,10 @@ body {
 
 .navBar h1{
   vertical-align: middle;
-  font-size: 40px;
   text-align: center;
-  margin-top: 0.5%;
+  margin-top: 4vw;
   color: rgb(255, 255, 255);
-  position: absolute;
+ /* position: absolute; */
   transition: 0.5s;
 }
 
@@ -148,6 +120,35 @@ body {
   }
 }
 
+/* hero - alex */
+
+#hero {
+  margin: 75px;
+  position: relative;
+  display: grid;
+}
+
+#hero img {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  min-width: fit-content;
+}
+
+#heroText1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#heroText2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#heroText3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
 /* info box - alex */
 
 .infoBox > p {
@@ -197,9 +198,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: 0.3s;
-}
-
-}
+} }
 
 /*#box1 {
   flex-wrap: wrap;
@@ -300,4 +299,79 @@ margin: 0;
 
 main {
   font-style: normal;
+}
+
+/* Grid */
+
+.navBar {
+  display: grid;
+  grid-template-columns: 5fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.navBar h1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-left: 1vh;
+  margin-top: auto;
+  align-self: center;
+  font-size: auto;
+  
+}
+.navBar ul {
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+@media only screen and (max-width: 750px) {
+  .navBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .navBar h1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    margin-left: 1vh;
+    margin-top: auto;
+    align-self: center;
+    font-size: auto;
+  }
+  .navBar ul {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .navBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .navBar h1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    margin-left: 1vh;
+    margin-top: auto;
+    align-self: center;
+    font-size: 1.5rem;
+
+  }
+  .navBar ul {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vh;
+  }
 }
