@@ -2,20 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: 1em sans-serif;
+  font-optical-sizing: auto;
+  font-family: "Modern Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  
   background-color: rgba(218, 212, 212, 0.264);
   color: #333;
   line-height: 1.6;
   font-size: 1.2rem;
-  margin-top: 5rem;
+  margin-top: 0;
+  
 }
 
 #autismPyramidText {
   width: 20%
 }
+
+/* navbar */
 
 .navBar {
   background: linear-gradient(
@@ -140,7 +148,84 @@ body {
   }
 }
 
+/* info box - alex */
 
+/* #infoBox1 {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 1rem;
+ padding: 30px;
+  margin: 0px 500px 100px 100px;
+ background: rgba(233, 233, 233, 0.75);
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ box-sizing: border-box;
+ width: 100%;
+}
+*/
+
+.infoBox > p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.infoBox {
+  color: black;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: white;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  color: black;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#background {
+  transition: 0.5s;
+  background-image: url(/img/pexels-lina-kivaka-1741231.jpg);
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  background-size: cover;
+}
+@media only screen and (max-width: 750px) {
+  .infoBox {
+    padding: 5%;
+    width: 75%;
+    font-size: 0.8rem;
+  }
+
+#background {
+  padding: 10%;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+}
+
+/*#box1 {
+  flex-wrap: wrap;
+  display: flex;
+  background-color: white;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  color: black;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+ margin-right: 5%;
+}*/
 /* footer contact us */
 
 footer {
@@ -206,4 +291,26 @@ margin: 0;
     display: inline;
   }
 
+.link1 {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.btn {
+  /*background: linear-gradient(to top right, #0000cc 50%, #00ffcc 50%, #007bff 50%);*/
+  background: rgb(230, 230, 230);
+  margin-bottom: 15px; 
+  transition: 0.1s;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+  transition: 0.1s;
+}
+
+main {
+  font-style: normal;
+}
