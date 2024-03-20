@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 1em sans-serif;
   font-optical-sizing: auto;
-  font-family: "Modern Antiqua", serif;
   font-weight: 400;
   font-style: normal;
+  font-family: 'heptaSlab';
 }
+
+@font-face{font-family:'heptaSlab';src:url('fonts/heptaSlab.ttf')}
 
 body {
   
@@ -49,7 +50,7 @@ body {
 @media (pointer:coarse) {
   .navBar a::after{
       transition: 0.05s;
-      background-color: rgba(255, 255, 255, 0.25);;
+      background-color: rgba(255, 255, 255, 0.25);
   }
 }
 
@@ -73,7 +74,7 @@ body {
 
 @media only screen and (min-width: 1201px) {
   .navBar h1{
-    margin-left: 9.5%;
+    margin-left: 7%;
   }
   .navBar a{
     margin-right: 9.5%;
@@ -81,10 +82,6 @@ body {
 }
 
 @media only screen and (min-width: 750px) {
-.navBar h1{
-  font-size: 100%;
-  transition: 0.5s;
-}
 
 .navBar ul {
   list-style-type: none;
@@ -94,10 +91,13 @@ body {
 }
 
 .navBar h1{
-  margin-top: 6px;
+  vertical-align: middle;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0.5%;
   color: rgb(255, 255, 255);
-  font-size: 250%;
   position: absolute;
+  transition: 0.5s;
 }
 
 .navBar a:hover{
@@ -149,19 +149,6 @@ body {
 }
 
 /* info box - alex */
-
-/* #infoBox1 {
- display: flex;
- flex-wrap: wrap;
- gap: 1rem;
- padding: 30px;
-  margin: 0px 500px 100px 100px;
- background: rgba(233, 233, 233, 0.75);
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
- box-sizing: border-box;
- width: 100%;
-}
-*/
 
 .infoBox > p {
   margin: 0;
