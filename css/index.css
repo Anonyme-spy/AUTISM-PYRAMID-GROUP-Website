@@ -1,0 +1,324 @@
+.div {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .div {
+    max-width: 100%;
+  }
+}
+.div-2 {
+  gap: 20px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .column {
+    width: 100%;
+  }
+}
+.div-3 {
+  align-self: stretch;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  font-weight: 700;
+  padding: 75px 60px;
+}
+@media (max-width: 991px) {
+  .div-3 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.div-4 {
+  color: var(--www-autism-org-uk-purple, #4203bf);
+  margin-right: 44px;
+  font: 46px/115% Century Gothic, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-4 {
+    max-width: 100%;
+    margin-right: 10px;
+    font-size: 40px;
+  }
+}
+.div-5 {
+  color: var(--www-autism-org-uk-mine-shaft, #363636);
+  margin: 29px 44px 0 0;
+  font: 400 16px/24px Century Gothic, -apple-system, Roboto, Helvetica,
+    sans-serif;
+}
+@media (max-width: 991px) {
+  .div-5 {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+}
+.div-6 {
+  justify-content: center;
+  align-self: start;
+  border-radius: 150px;
+  background-color: var(--www-autism-org-uk-port-gore, #2a2659);
+  margin-top: 24px;
+  color: var(--www-autism-org-uk-nero, #fff);
+  text-align: center;
+  padding: 11px 51px;
+  font: 14px/120% Century Gothic, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-6 {
+    padding: 0 20px;
+  }
+}
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .column-2 {
+    width: 100%;
+  }
+}
+.img {
+  aspect-ratio: 2.04;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+  align-self: stretch;
+  flex-grow: 1;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
+.before-icon,
+.waaw-hpjpg-icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.div-2 {
+  border-radius: 0 0 25% 25%;
+  border: solid 1px bisque;
+  overflow: hidden;
+}
+
+/* Nav bar lmao */
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+:root {
+  --green: rgba(0, 152, 0, 0.85);
+  --grey: rgb(51, 51, 51);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+/*Nav Styles start here*/
+
+header {
+  background: var(--grey);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.logo {
+  margin: 0.1em;
+  color: white;
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-hamburger {
+  outline: 1px solid var(--green);
+  opacity: 0.75;
+}
+
+.nav-hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-hamburger span,
+.nav-hamburger span::before,
+.nav-hamburger span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav-hamburger span::before,
+.nav-hamburger span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-hamburger span::before {
+  bottom: 7px;
+}
+
+.nav-hamburger span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--grey);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*Main body styles starts here*/
+
+.content {
+  height: 200vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-color: #939393;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+/* Media Query for bigger screens*/
+@media screen and (min-width: 800px) {
+  .nav-hamburger {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 4fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-top: 0.5em;
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: var(--green);
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+    border-radius: 4px;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+}
