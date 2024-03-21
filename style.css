@@ -5,10 +5,10 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-family: 'heptaSlab';
 }
 
 @font-face{font-family:'heptaSlab';src:url('fonts/heptaSlab.ttf')}
+@font-face{font-family:'poiretOne';src:url('fonts/poiretOne.ttf')}
 
 body {
   
@@ -35,12 +35,15 @@ body {
   );
   display: block;
   padding: 5px 0 5px 0;
+  font-family: 'poiretOne';
 }
 
 .navBar a{
   color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 15px;
+  font-weight: 550;
+  font-size: 25px;
   display: block;
   text-align: center;
   margin-right: 15px;
@@ -64,9 +67,9 @@ body {
 }
 
 .navBar h1{
-  vertical-align: middle;
+  margin:auto;
   text-align: center;
-  margin-top: 4vw;
+  margin-left: 20px;
   color: rgb(255, 255, 255);
  /* position: absolute; */
   transition: 0.5s;
@@ -131,7 +134,16 @@ body {
 #hero img {
   grid-column: 1;
   grid-row: 1 / span 3;
-  min-width: fit-content;
+  min-width:auto;
+  min-height:100%;
+  justify-content: center;
+  object-fit: cover;
+  width: 50%;
+  overflow: visible;
+}
+
+img {
+  justify-self: self-start;
 }
 
 #heroText1 {
