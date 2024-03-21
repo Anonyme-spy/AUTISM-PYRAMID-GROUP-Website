@@ -52,7 +52,7 @@ body {
   padding: 15px;
   font-weight: 500;
   text-shadow: #000000;
-  font-size: 25px;
+  font-size: 30px;
   display: block;
   text-align: center;
   margin-right: 15px;
@@ -61,6 +61,7 @@ body {
 
 .navBar h1 {
   font-weight: 600;
+  font-size: 230%;
 }
 
 @media (pointer: coarse) {
@@ -139,34 +140,16 @@ body {
 /* hero - alex */
 
 #hero {
-  margin: 75px;
+  margin: 30px 10% 30px 10%;
   position: relative;
   display: grid;
-  font-family: "heptaSlab";
-}
-
-#hero img {
-  grid-column: 1;
-  grid-row: 1 / span 3;
-  min-width: auto;
-  min-height: 100%;
-  justify-content: center;
-  object-fit: cover;
-  width: 50%;
-  overflow: visible;
-}
-
-img {
-  justify-self: self-start;
+  font-family: "rubik";
 }
 
 #title {
   grid-row: 1;
-  font-size: 6vw;
-}
-
-#subtitle {
-  font-size: 4vw;
+  font-size: 5vw;
+  font-family: "heptaSlab";
 }
 
 #heroText1 {
@@ -189,32 +172,38 @@ img {
 .infoBox > p {
   margin: 0;
   padding: 15px 0 0 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.infoBox > h3 {
+  margin: 0;
+  padding: 0 0 0 0;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .infoBox {
+  gap: 10px;
   color: black;
-  flex-wrap: wrap;
-  display: flex;
+  display: grid;
   background-color: white;
   border: solid 2px rgba(255, 255, 255, 0.5);
   color: black;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-family: "rubik";
+  border-radius: 10px;
 }
 
 #background {
   transition: 0.5s;
   background-color: rgb(230, 230, 230);
-  padding: 15% 0 15% 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  padding: 5% 0 5% 0;
+  display: grid;
   gap: 20px;
   background-size: cover;
   margin: auto;
@@ -238,20 +227,6 @@ img {
   }
 }
 
-/*#box1 {
-  flex-wrap: wrap;
-  display: flex;
-  background-color: white;
-  border: solid 2px rgba(255, 255, 255, 0.5);
-  color: black;
-  box-sizing: border-box;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 100%;
- margin-right: 5%;
-}*/
-/* footer contact us */
-
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -259,9 +234,9 @@ footer {
   color: rgb(255, 254, 254);
   padding: 20px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
   position: relative;
-  top: 20px;
+  top: 0px;
 }
 .contact-info {
   font-size: 18px;
@@ -295,12 +270,6 @@ footer {
   margin-bottom: 10px;
 }
 
-#watermark {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-}
-
 @media (max-width: 768px) {
   #container {
     display: flex;
@@ -325,7 +294,7 @@ footer {
 
 .btn {
   /*background: linear-gradient(to top right, #0000cc 50%, #00ffcc 50%, #007bff 50%);*/
-  background: rgb(116, 81, 139);
+  background: rgb(70, 110, 196);
   filter: drop-shadow(0 0 0.05rem black);
   color: white;
   margin-bottom: 2opx;
@@ -442,9 +411,4 @@ main {
     align-items: center;
     font-size: 2vh;
   }
-}
-#background {
-  position: relative;
-  top: 50%;
-  flex-direction: column;
 }
