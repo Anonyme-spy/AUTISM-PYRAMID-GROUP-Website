@@ -248,13 +248,9 @@ section {
 }
 
 #autismCircle {
-  grid-row: 1 / span 2;
-  grid-column: 2;
 }
 
 #aText1 {
-  grid-row: 3;
-  grid-column: 2;
 }
 
 #aText2 {
